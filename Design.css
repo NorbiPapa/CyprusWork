@@ -1,0 +1,16 @@
+.mrl{
+   width: 850px;
+   height: 100%;
+   background-color: azure;
+
+    
+}
+body{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: green;
+}
