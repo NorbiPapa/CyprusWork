@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="mrl">
+    <div className="w-50">
       <div className="row">
         <div className="topnav">
           <a className="active" href="#home">
@@ -13,6 +13,13 @@ export default function Home() {
       </div>
       <div className="row">
         <div id="default">
+          <form action="" method="post">
+            <label htmlFor="user">Username: </label> <br />
+            <input type="text" name="username" id="username" /> <br />
+            <label htmlFor="pass">Password:</label> <br />
+            <input type="password" name="password" id="password" /> <br />
+            <input type="submit" value="Login" id="loginButton" />
+          </form>
           <h1>Home</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -119,6 +126,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-
   )
 }

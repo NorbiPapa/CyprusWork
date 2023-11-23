@@ -1,10 +1,8 @@
-.mrl{
-  width: 850px;
+.w-50{
   height: fit-content;
   background-color: azure;
-
-   
 }
+
 body {
    margin-top: 50px;
    margin-bottom: 50px;
