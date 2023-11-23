@@ -5,13 +5,14 @@
 }
 .info{
   float: left;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
 }
 .sicon{
   width: 50px;
   height: 50px;
   float: right;
-  margin-top: 125px;
+  
 }
 .foot{
   background-color: #F9C784;
@@ -20,7 +21,7 @@
 }
 .contactus{
   font-size: 40px;
-  float: left;
+  
   margin-left: 100px;
   margin-top: 50px;
 }
