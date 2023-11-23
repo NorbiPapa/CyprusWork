@@ -1,6 +1,21 @@
 .head {
   background-color: #294A70;
   height: 100px;
+  
+}
+
+.logo{
+  float: left;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+.topnav p {
+  float: left;
+  color: #CEB5A7;
+  font-size: xx-large;
+  line-height: 80px;
+  margin-left: 1px;
+
 }
 .topnav a {
     float: right;
@@ -9,6 +24,9 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    line-height: 65px;
+    
+    
   }
   
   .topnav a:hover {
