@@ -1,23 +1,10 @@
-.w-50{
-   
-   height: fit-content;
-   background-color: azure;
-
-    
+.head {
+  background-color: #294A70;
+  height: 100px;
 }
-body{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-color: green;
-}
-
 .topnav a {
-    float: left;
-    color: #000000;
+    float: right;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
