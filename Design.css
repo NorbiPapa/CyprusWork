@@ -74,9 +74,6 @@
   color: black;
 }
 
-.speakers {
-  background-color: #294A70;
-}
 
 body {
   background-color: #476C62;
@@ -114,5 +111,24 @@ ul {
 }
 
 #about {
-  margin: 50px;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+#agandah1{
+  margin-bottom: 60px;
+}
+#pictures{
+  margin-bottom: 100px;
+}
+#abouttext{
+  margin: 60px;
+}
+#speakers{
+  background-color: #294A70;
+  text-align: center;
+  
+
+}
+#speakerstext{
+  margin-top: 300px;
 }
