@@ -8,19 +8,30 @@ var answer=document.getElementById('answer');
 q1.addEventListener('click',question1);
 q2.addEventListener('click',question2);
 q3.addEventListener('click',question3);
-
+const li1=document.getElementById('li1');
+const li2=document.getElementById('li2');
+const li3=document.getElementById('li3');
 
 function question1()
 {
+    li1.style.backgroundColor='#294A70';
+    li2.style.backgroundColor='#476C62';
+    li3.style.backgroundColor='#476C62';
     answer.textContent=a1;
 }
 
 function question2()
 {
+    li2.style.backgroundColor='#294A70';
+    li1.style.backgroundColor='#476C62';
+    li3.style.backgroundColor='#476C62';
     answer.textContent=a2;
 
 }
 function question3()
 {
+    li3.style.backgroundColor='#294A70';
+    li2.style.backgroundColor='#476C62';
+    li1.style.backgroundColor='#476C62';
     answer.textContent=a3;
 }

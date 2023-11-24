@@ -4,10 +4,18 @@
 
 }
 
+.FAQH1{
+  margin-bottom: 20px;
+}
+
 .info {
   float: left;
   margin-top: 50px;
   margin-left: 100px;
+}
+
+#margonelkul{
+  --bs-gutter-x: 0;
 }
 
 .faq {
@@ -19,7 +27,7 @@
   color: inherit;
   cursor: pointer;
   font-size: 25px;
-  color: #294A70;
+  color: white;
 }
 
 .sicon {
