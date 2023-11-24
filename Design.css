@@ -113,7 +113,6 @@ h2 {
 
 
 
-
 #loginButton {
   margin-top: 20px;
   background-color: #476c62;
@@ -214,4 +213,11 @@ h2 {
     font-size: 0.7em;
     min-height: 0;
   }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
 }
