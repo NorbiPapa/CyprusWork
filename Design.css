@@ -134,6 +134,8 @@ ul {
 #speakers{
   background-color: #294A70;
   text-align: center;
+  --bs-gutter-x: 0;
+
   
 
 }
