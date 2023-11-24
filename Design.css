@@ -97,20 +97,22 @@ h5 {
 }
 
 
-ul{
-  list-style-type:circle;
+ul {
+  list-style-type: circle;
 
 }
-.first{
+
+.first {
   position: relative;
   margin-left: 100px;
   margin-top: 200px;
 }
-.second{
+
+.second {
   position: relative;
-  margin-right: 50px; 
-}
-#about{
-  margin: 50px;
+  margin-right: 50px;
 }
 
+#about {
+  margin: 50px;
+}
