@@ -82,6 +82,22 @@ footer{
 h5{
   padding-bottom: 30px;
 }
-li{
-  padding-bottom: 90px;
+
+
+ul{
+  list-style-type:circle;
+
 }
+.first{
+  position: relative;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+.second{
+  position: relative;
+  margin-right: 50px; 
+}
+#about{
+  margin: 50px;
+}
+
