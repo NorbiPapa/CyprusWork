@@ -1,8 +1,7 @@
 .head {
   background-color: #C4D4E9;
   height: 100px;
-
-}
+  }
 
 .attentiongetter{
   margin-left: 80px;
@@ -136,7 +135,7 @@ ul {
   margin: 60px;
 }
 #speakers{
-  background-color: #294A70;
+  background-color: #C4D4E9;
   text-align: center;
   --bs-gutter-x: 0;
 
