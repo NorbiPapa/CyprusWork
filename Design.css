@@ -1,9 +1,5 @@
-body {
-  background: transparent;
 
-}
-
-body,
+#signin,
 input {
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -31,7 +27,7 @@ input:focus {
   margin-top: 1%;
 }
 
-h2 {
+#signin {
   font-size: 3em;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
