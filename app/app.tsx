@@ -1,4 +1,4 @@
-use client;
+"use client";
 
 import React, { createContext, useState, useEffect, use } from 'react';
 

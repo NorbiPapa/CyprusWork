@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useContext } from 'react';
 import { AuthProvider, AuthContext } from './app'; // Update the path accordingly
 
@@ -74,6 +76,5 @@ export default function Home() {
       </div>
     </div>
     </AuthProvider>
-    
   )
 }
