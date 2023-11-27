@@ -21,12 +21,12 @@ export default function Home() {
     });
   
     if (response.ok) {
-      // Perform login actions, like updating context or state
+      const data = await response.json();
+      // Assuming the response contains a token
+      localStorage.setItem('authToken', data.token);
       login();
-      // Reload the page
       window.location.reload();
     } else {
-      // Handle login failure (e.g., show an error message)
       console.error('Login failed');
     }
   };
