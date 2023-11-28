@@ -17,9 +17,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         res.status(401).json({ message: 'User not found' });
         return;
       }
+
+      console.log("Received username:", username);
+      console.log("Received password:", password); // Note: Be cautious about logging plain text passwords
+      console.log("User retrieved from database:", user);
+      console.log("Hashed password from database:", user.password);
   
       // Compare the hashed password
-      const passwordIsValid = await bcrypt.compare(password, user.hashedPassword);
+      const passwordIsValid = await bcrypt.compare(password, user.password);
+      console.log("Password is valid:", passwordIsValid);
   
       if (!passwordIsValid) {
         res.status(401).json({ message: 'Invalid password' });
@@ -33,6 +39,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         secret, // Secret key for signing the token
         { expiresIn: '1h' }   // Token expiration time
       );
+
+      console.log("Generated JWT token:", token);
       
       res.status(200).json({ token, message: 'Login successful' });
     } else {
