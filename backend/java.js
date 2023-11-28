@@ -14,24 +14,34 @@ const li3=document.getElementById('li3');
 
 function question1()
 {
-    li1.style.backgroundColor='#294A70';
-    li2.style.backgroundColor='#476C62';
-    li3.style.backgroundColor='#476C62';
+    li1.style.backgroundColor='#C4D4E9';
+    li2.style.backgroundColor='#223832';
+    li3.style.backgroundColor='#223832';
+    q1.style.color='black';
+    q2.style.color='white';
+    q3.style.color='white';
     answer.textContent=a1;
+    
 }
 
 function question2()
 {
-    li2.style.backgroundColor='#294A70';
-    li1.style.backgroundColor='#476C62';
-    li3.style.backgroundColor='#476C62';
+    li2.style.backgroundColor='#C4D4E9';
+    li1.style.backgroundColor='#223832';
+    li3.style.backgroundColor='#223832';
+    q2.style.color='black';
+    q1.style.color='white';
+    q3.style.color='white';
     answer.textContent=a2;
 
 }
 function question3()
 {
-    li3.style.backgroundColor='#294A70';
-    li2.style.backgroundColor='#476C62';
-    li1.style.backgroundColor='#476C62';
+    li3.style.backgroundColor='#C4D4E9';
+    li2.style.backgroundColor='#223832';
+    li1.style.backgroundColor='#223832';
+    q3.style.color='black';
+    q1.style.color='white';
+    q2.style.color='white';
     answer.textContent=a3;
 }
