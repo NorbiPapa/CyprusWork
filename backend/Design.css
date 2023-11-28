@@ -1,6 +1,6 @@
 header {
-    width: 100%;
-    margin: 13px;
+  width: 100%;
+  margin: 12px;
 }
 
 .attentiongetter{
@@ -68,7 +68,6 @@ header {
   width:100%;
   transition: top 0.5s;
   margin-bottom: 20px;
- 
 }
 
 .topnav p {
@@ -175,6 +174,28 @@ ul {
 #home {
   align-self: center;
 }
+
+#kleosFelirat {
+  font-family: 'Fredericka the Great', serif;
+  font-size: 80px;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', serif;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p.ms-4 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+hr {
+  width: 96%;
+}
+
 .container{
   padding-top: 80px;
 }
