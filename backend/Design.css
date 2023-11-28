@@ -1,6 +1,6 @@
 header {
-  background-color: #C4D4E9;
-  height: 100px;
+    width: 100%;
+    margin: 12px;
 }
 
 .attentiongetter{
@@ -60,8 +60,15 @@ header {
 }
 
 .topnav {
+  background-color: #C4D4E9;  
   overflow: hidden;
   line-height: 90px;
+  position: fixed;
+  top: 0;
+  width:100%;
+  transition: top 0.5s;
+  margin-bottom: 20px;
+ 
 }
 
 .topnav p {
@@ -167,4 +174,7 @@ ul {
 
 #home {
   align-self: center;
+}
+.container{
+  padding-top: 80px;
 }
