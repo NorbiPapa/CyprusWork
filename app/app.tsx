@@ -42,4 +42,3 @@ export const AuthContext = createContext<AuthContextType>({
         </AuthContext.Provider>
     );      
   };
-  

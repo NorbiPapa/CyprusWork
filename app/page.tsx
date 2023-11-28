@@ -11,7 +11,7 @@ export default function Home() {
 
   const handleLogin = async (event: React.FormEvent) => {
     event.preventDefault();
-  
+
     const response = await fetch('/api/login', {
       method: 'POST',
       headers: {
@@ -19,13 +19,15 @@ export default function Home() {
       },
       body: JSON.stringify({ username, password }),
     });
-  
+
     if (response.ok) {
       const data = await response.json();
-      // Assuming the response contains a token
       localStorage.setItem('authToken', data.token);
-      login();
-      window.location.reload();
+      login(); // This will set isLoggedIn to true
+      const element = document.getElementById('loggedin');
+      if (element) {
+          element.textContent = "Logged in";
+      }
     } else {
       console.error('Login failed');
     }
@@ -77,6 +79,7 @@ export default function Home() {
                 </div>
                 <input type="submit" value="Login" id="loginButton" />
               </form>
+              <p id="loggedin">Not logged in</p>
             </div>
           </div>
           </div>
