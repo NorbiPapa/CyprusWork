@@ -1,3 +1,9 @@
+/*
+The main thing that we are doing here is we are creating a variable for every list item, and every introduction
+for the courses. We create a 'Mouseover' event listener. This event listener activates when you hover you mouse
+over the declared text. When this event happens all of the other courses are going to be on deffault settings
+only the list item will be changed which is hovered.
+*/
 document.addEventListener('DOMContentLoaded', ()=>{
     const erasmusli1=document.getElementById('erasmusli1');
     const erasmusli2=document.getElementById('erasmusli2');
@@ -9,6 +15,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const cursechemic="Step into the world of Erasmus Chemical Studies at Kleos Farm, a unique haven nestled amidst nature's embrace, far from the hustle and bustle of urban life. Here, aspiring chemists embark on a dynamic journey, delving into labs and hospitals to acquire invaluable knowledge applicable across various professions integrating chemistry and biology. Kleos Farm offers a holistic learning experience where chemical students not only explore theoretical concepts but also engage in hands-on experiments in state-of-the-art laboratories. These laboratories serve as dynamic spaces for discovery, fostering a deep understanding of the intricate relationship between chemistry and biology. Beyond the confines of traditional learning environments, Erasmus Chemical Studies at Kleos Farm extend into hospitals, providing students with real-world applications of their studies. Through practical experiences, they gain insights into the vital role chemistry plays in medical advancements and healthcare.Join us at Kleos Farm, where chemical studies unfold in a setting that seamlessly blends academic rigor with the tranquility of nature. Welcome to a place where chemistry meets biology, and students are empowered to apply their knowledge in meaningful ways across a spectrum of professions.";
     const cursehospitality="Embark on an exciting journey with Erasmus Hospitality Studies at Kleos Farm, an idyllic retreat surrounded by nature's beauty, offering a serene escape from the urban clamor. Here, hospitality students dive into immersive experiences, honing their skills in the art of service amidst the lush greenery and pristine surroundings.Kleos Farm becomes the training ground for future hospitality professionals as students learn to create exceptional guest experiences. From serving in charming restaurants to mastering the intricacies of hotel management, the farm provides a unique backdrop for hands-on learning.In addition to the unparalleled natural setting, Kleos Farm offers a host of activities and amenities, making it an ideal environment for hospitality education. Students not only refine their service skills but also cultivate a deep appreciation for the synergy between nature, service, and guest satisfaction.Join us at Kleos Farm, where hospitality studies blend seamlessly with the tranquility of rural life. Welcome to a place where students develop their talents against the backdrop of a thriving ecosystem, creating memorable experiences for guests in the heart of nature's bounty.";
     const cursechef="Embark on a culinary odyssey with Erasmus Culinary Arts at Kleos Farm, an exquisite haven enveloped by nature's serenity, offering a retreat from the urban hustle. Here, aspiring chefs immerse themselves in a world of flavors and techniques, where the vibrant greenery and fresh air inspire culinary creativity.Kleos Farm serves as the culinary canvas for students, providing a picturesque setting for hands-on training and experimentation. From cultivating ingredients in the farm's garden to crafting delectable dishes in state-of-the-art kitchens, culinary students at Kleos Farm experience the art and science of gastronomy in a unique environment.Beyond the culinary classrooms, Kleos Farm presents an array of opportunities for students to refine their skills. Whether exploring the diverse produce of the farm or collaborating with local artisans, culinary students gain a holistic understanding of the farm-to-table journey.Join us at Kleos Farm, where the culinary arts meet the tranquility of rural life. Welcome to a place where students don their chef hats amidst the natural beauty, creating gastronomic delights that celebrate the richness of both nature and culinary craftsmanship.";
+    //Above this comment, there is the five constant, that will be the text wich appears in the paragraph next to the list items.
+    //Below this comment, there is the five mouse over events that will allow us to hover.
     erasmusli1.addEventListener('mouseover',course1);
     erasmusli2.addEventListener('mouseover',course2);
     erasmusli3.addEventListener('mouseover',course3);
@@ -22,6 +30,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const erasmus=document.getElementById('erasmus');
 
 
+    //All of the functions will be the same, just changed to the right list item. It makes expanding this site easy.
     function course1()
     {
         erasmusli1.style.backgroundColor='#C4D4E9';
