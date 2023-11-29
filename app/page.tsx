@@ -2,6 +2,9 @@
 
 import React, { useContext, useState, useEffect } from 'react';
 import { AuthContext } from '../context/AuthContext';
+import Script  from '../pages/_app';
+import { AppProps } from 'next/app';
+import { AuthProvider } from '../context/AuthContext';
 
 export default function Home() {
 
@@ -97,7 +100,6 @@ export default function Home() {
           {isLoggedIn && (
             <button onClick={logout}>Logout</button>
           )}
-          
           </div>
         </div>
       </div>

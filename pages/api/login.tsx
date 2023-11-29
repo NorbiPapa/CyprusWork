@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { connectToDatabase } from '../../database/db';
+import { AuthProvider } from '../../context/AuthContext';
 import bcrypt  from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
