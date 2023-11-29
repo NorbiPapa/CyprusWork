@@ -27,7 +27,6 @@ export default function Home() {
     if (response.ok) {
       const data = await response.json();
       localStorage.setItem('authToken', data.token);
-      console.log('Token type:', typeof data.token);
       console.log('Before calling login function');
       login(data.token);
       console.log(`Data token: ${data.token}`)

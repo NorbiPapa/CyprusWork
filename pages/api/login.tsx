@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '../database/db';
+import { connectToDatabase } from '../../database/db';
 import bcrypt  from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
@@ -30,6 +30,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       const secret = process.env.JWT_SECRET || 'default_secret_key';
 
+      // Generating token
       const token = jwt.sign(
         { userId: user.id }, // Payload could be the user's ID or other identifier
         secret, // Secret key for signing the token
