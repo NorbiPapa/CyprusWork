@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext, useState, useEffect } from 'react';
-import { AuthContext } from './app'; // Update the path accordingly
+import { AuthContext } from '../context/AuthContext';
 
 export default function Home() {
 
@@ -27,8 +27,10 @@ export default function Home() {
     if (response.ok) {
       const data = await response.json();
       localStorage.setItem('authToken', data.token);
+      console.log('Token type:', typeof data.token);
       console.log('Before calling login function');
-      login(data.token); // This will set isLoggedIn to true
+      login(data.token);
+      console.log(`Data token: ${data.token}`)
       console.log('After calling login function');
     } else {
       const error = await response.json();

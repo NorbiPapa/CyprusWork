@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { connectToDatabase } from '../../database/db'; // Adjust this path as necessary
+import { connectToDatabase } from '../database/db';
 import bcrypt  from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       const { username, password } = req.body;
       const client = await connectToDatabase();
   
-      // Query to find user by username. Adjust this query according to your database schema
+      // Query to find user by username
       const userQuery = 'SELECT * FROM users WHERE username = $1';
       const { rows } = await client.query(userQuery, [username]);
       const user = rows[0];
@@ -17,11 +17,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         res.status(401).json({ message: 'User not found' });
         return;
       }
-
-      console.log("Received username:", username);
-      console.log("Received password:", password); // Note: Be cautious about logging plain text passwords
-      console.log("User retrieved from database:", user);
-      console.log("Hashed password from database:", user.password);
   
       // Compare the hashed password
       const passwordIsValid = await bcrypt.compare(password, user.password);

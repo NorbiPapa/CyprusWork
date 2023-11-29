@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import { AuthProvider } from '../app/app'; // Adjust the path to where your app.tsx is
+import { AuthProvider } from '../context/AuthContext';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
