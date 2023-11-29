@@ -2,13 +2,13 @@ import React, { createContext, useState, useEffect } from 'react';
 
 interface AuthContextType {
   isLoggedIn: boolean;
-  login: () => void;
+  login: (token: string) => void;
   logout: () => void;
 }
 
 export const AuthContext = createContext<AuthContextType>({
     isLoggedIn: false,
-    login: () => {},
+    login: (token: string) => {},
     logout: () => {}
   });
 
@@ -26,14 +26,18 @@ export const AuthContext = createContext<AuthContextType>({
       }
     }, []);
   
-    const login = () => {
+    const login = (token: string) => {
+      console.log('Login function called');
       localStorage.setItem('authToken', 'your-token');
       setIsLoggedIn(true);
+      console.log('isLoggedIn set to true');
     };
   
     const logout = () => {
+      console.log('Logout function called');
       localStorage.removeItem('authToken');
       setIsLoggedIn(false);
+      console.log('isLoggedIn set to false');
     };
   
     return (

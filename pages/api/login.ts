@@ -28,6 +28,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       console.log("Password is valid:", passwordIsValid);
   
       if (!passwordIsValid) {
+        console.error('Invalid password attempt for user:', username);
         res.status(401).json({ message: 'Invalid password' });
         return;
       }
@@ -41,7 +42,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       );
 
       console.log("Generated JWT token:", token);
-      
+      console.log('Login successful for user:', username);
       res.status(200).json({ token, message: 'Login successful' });
     } else {
       // Handle non-POST requests
