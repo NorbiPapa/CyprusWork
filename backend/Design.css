@@ -33,7 +33,8 @@ hr {
 
 header {
   width: 100%;
-  margin: 12px;
+  position: relative;
+  z-index: 10;
 }
 
 #topnav {
@@ -88,7 +89,6 @@ footer {
   background-color: #F9C784;
   height: 250px;
   display: block;
-  margin-top: 30px;
 }
 
 #info {
@@ -100,7 +100,7 @@ footer {
 #contactus {
   font-size: 40px;
   margin-left: 100px;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .sicon {
@@ -113,7 +113,7 @@ footer {
 /*-----ATTENTION GETTER-----*/
 
 #attentionPlace {
-  height: auto;
+  height: 100%;
   width: 100vw;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../images/attentionBackground.JPG");
@@ -337,4 +337,10 @@ footer {
   to {
     opacity: 1
   }
+}
+
+/*-----FACEBOOK-----*/
+
+#facebookBox {
+  margin: 90px 0px 90px 200px;
 }

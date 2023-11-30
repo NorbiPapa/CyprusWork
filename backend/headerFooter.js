@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="gallery.html">Gallery</a>
             <a href="aboutUs.html">About Us</a>
             <a href="#reviews">Reviews</a>
-            <a href="faq.html">FAQ</a>
         </div>
     </div>
     `;
