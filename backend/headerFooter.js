@@ -26,7 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         <a href="https://twitter.com/XSocialNetworks" target="_blank"><img src="../images/x.png" alt="X icon" class="sicon"></a>
     `;
 
+    let betustilusLinkek = `
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Montserrat:wght@500&family=Raleway:wght@200&display=swap" rel="stylesheet">
+    `
+
     document.getElementById("header").innerHTML = headerInnerHtml;
     document.getElementById("footer").innerHTML = footerInnerHtml;
-
+    document.getElementById("betustilusok").innerHTML = betustilusLinkek;
 });
