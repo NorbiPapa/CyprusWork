@@ -2,8 +2,6 @@ var slideIndex = 0;
 var slides, dots;
 var slideTimeout;
 
-
-
 function showSlides() {
   var i;
   slides = document.getElementsByClassName("mySlides");
