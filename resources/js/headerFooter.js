@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
             id="logo" alt="Kleos farm logo">
         <p class="ms-4">Bright Change</p>
         <div class="d-flex align-items-center justify-content-end">
-            <a class="active" href="DesignExample.html">Home</a>
+            <a class="active" href="/">Home</a>
             <a href="/erasmusCourses">Erasmus+ VET courses</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="aboutUs.html">About Us</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/aboutUs">About Us</a>
             <a href="#reviews">Reviews</a>
         </div>
     </div>
