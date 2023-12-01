@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /*-----UNIVERZÁLIS-----*/
 
 body {
@@ -120,7 +116,7 @@ body {
     height: 100%;
     width: 100vw;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../images/attentionBackground.JPG");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../../pictures/attentionBackground.JPG");
     background-position: right;
     background-size: cover;
     background-attachment: fixed;

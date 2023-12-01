@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     let headerInnerHtml = `
     <div id="topnav">
-        <img src="{{ asset('pictures/Kleo.jpg') }}" style="height: 75px;" width="75px"
+        <img src="pictures/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" style="height: 75px;" width="75px"
             id="logo" alt="Kleos farm logo">
         <p class="ms-4">Bright Change</p>
         <div class="d-flex align-items-center justify-content-end">

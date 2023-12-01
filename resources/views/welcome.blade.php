@@ -2,8 +2,6 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
 
-        @vite(['resources/css/app.css', 'resources/js/headerFooter.js', 'resources/js/design.js',])
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,16 +26,16 @@
         
         <title>Cyprus design example</title>
 
+        @vite(['resources/css/app.css', 'resources/js/headerFooter.js', 'resources/js/design.js',])
 
     </head>
     <body class="antialiased">
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
-            nonce="HHAb3jrP"></script>
+            nonce="HHAb3jrP">
+        </script>
 
-        <header id="header">
-            
-        </header>
+        <header id="header"></header>
         
         <div class="container mt-4">
             <div class="row">
@@ -47,10 +45,9 @@
                     <p>Welcome to Kleos! Welcome to the school of the future! </p>
                 </div>
                 <div class="col-8 col-md-6">
-                    <img style="width: 103%; height: 103%;" src="public/pictures/Kleo.jpg" alt="Kleos Educational Model FarmS">
+                    <img style="width: 103%; height: 103%;" src="{{URL('pictures/Kleo.jpg')}}" alt="Kleos Educational Model FarmS">
                 </div>
             </div>
-
         </div> 
 
         <div class="row mt-3 mb-0" id="attentionPlace">
