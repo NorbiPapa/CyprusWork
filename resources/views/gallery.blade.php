@@ -30,7 +30,7 @@
           <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
     
-            <img src="picturespictures/Kleos_images/greenleaves.jpeg">
+            <img src="pictures/Kleos_images/greenleaves.jpeg">
             <div class="text">Caption Text</div>
           </div>
     
