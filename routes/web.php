@@ -28,12 +28,16 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/erasmusCourses', function () {
+Route::get('/erasmus-courses', function () {
     return view('erasmusCourses'); // assuming the Blade file is named erasmusCourses.blade.php
 });
 
 Route::get('/gallery', function () {
     return view('gallery'); // assuming the Blade file is named gallery.blade.php
+});
+
+Route::get('/about-us', function() {
+    return view('aboutUs'); // assuming the Blade file is named aboutUs.blade.php
 });
 
 require __DIR__.'/auth.php';

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!--BETŰSTÍLUSOK-->
+    <div id="betustilusok">
+
+    </div>
+    @vite(['resources/css/app.css', 'resources/js/headerFooter.js', 'resources/js/design.js'])
+</head>
+
+<body>
+    <header id="header">
+
+    </header>
+
+    <div id="about">
+        <div class="row">
+            <div class="col">
+                <div id="abouttext">
+                    <h2>About Kleos Educational <br>Model Farm</h2>
+                    <hr>
+                    <p>The Kleos Educational Model Farm community of individuals and organizations interested in
+                        sustainable
+                        agriculture and animal farming. Our mission is to promote sustainable farming practices and
+                        advocate
+                        for policies that support sustainable food systems. We offer a place to experience the
+                        self-sustainable lifestyle.</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" style="width: 60%; height: 60%;" src="pictures/goats.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col" style="margin-left: 50px;">
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" src="pictures/dogs.png" alt="The Kleos Royal Labradors">
+                <img id="aboutUsImage" src="pictures/dogs2.png" alt="The Kleos Royal Labradors">
+            </div>
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" src="pictures/horse.png" alt="Horse">
+                <img id="aboutUsImage" src="pictures/goats2.png" alt="Goats">
+            </div>
+        </div>
+        <div class="col">
+            <div id="abouttext">
+                <h2>Kleos Royal Labradors and other animals</h2>
+                <hr>
+                <p>At Kleos, students & visitors will be able to interact with Kleos Royal Labradors and meet Copper,
+                    Kori, Dolly, Ektor, Plato, Rea, Merfa & Canella as well as other animals, such as, goats, horses,
+                    chickens, to name a few! An ideal opportunity for VET students studying veterinary and/or animal
+                    care!</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="abouttext">
+                <h2>How does Kleos farm use traditional skills and permaculture for high-quality organic products?</h2>
+                <hr>
+                <p>At Kleos self-sustainable farm, we use a wide range of traditional skills to support life, focusing
+                    on producing over consuming. Some of the principles we apply are consistent with those of
+                    permaculture, that is, a self-sustainable farm makes use of everything on the homestead to create a
+                    symbiotic relationship where nothing goes to waste. To this extend, Kleos produces a variety of
+                    organic products of the highest quality & nutritional value for its residents as well as members of
+                    the local community and beyond.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-center">
+            <img id="aboutUsImage" style="width: 40%; height: 40%;" src="pictures/herb2.png" alt="Herb">
+            <img id="aboutUsImage" style="width: 40%; height: 40%;" src="pictures/fruit1.png" alt="Fruit">
+            <img id="aboutUsImage" style="width: 40%; height: 40%;" src="pictures/cactus.png" alt="Cactus">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="margin-left: 50px; margin-top: 100px;">
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" src="pictures/students.png" alt="">
+                <img id="aboutUsImage" src="pictures/students2.png" alt="">
+            </div>
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" src="pictures/students3.png" alt="">
+                <img id="aboutUsImage" src="pictures/students4.png" alt="">
+            </div>
+        </div>
+        <div class="col">
+            <div id="abouttext">
+                <h2>What could the students do in the farm?</h2>
+                <hr>
+                <p>At Kleos, students & young adults have the opportunity to see in practice the theory taught in their
+                    school curriculum, while studying outdoors with ShipCon teachers and experts; in this way they will
+                    be able to comprehend important concepts covering a wide range of educational areas, while at the
+                    same time develop an affection and care for the flora and fauna. This is so important for the young
+                    generation, who will understand the value of nature and the longer-term benefits for people while at
+                    the same time equipped with valuable lifelong skills & knowledge.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div id="abouttext">
+                <h2>We will find a job for every students</h2>
+                <hr>
+                <p>Furthermore, at Kleos we welcome Erasmus+ VET students from a wide range of fields, such as
+                    construction, maintenance, wood working, culinary, animal care, agriculture/agronomists, irrigation,
+                    to name a few, to do their practice/traineeship, in a truly wonderful environment.</p>
+                <p>It is worth noting that VET students will be accommodated in stone-built houses in which only natural
+                    materials are used, stone & wood!</p>
+            </div>
+        </div>
+        <div class="col" style="margin-left: 150px; margin-top: 100px;">
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" src="pictures/student5.png" alt="">
+                <img id="aboutUsImage" src="pictures/student6.png" alt="">
+            </div>
+            <div class="col d-flex align-items-center">
+                <img id="aboutUsImage" src="pictures/student7.png" alt="">
+                <img id="aboutUsImage" src="pictures/student8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+
+    </footer>
+</body>
+
+</html>

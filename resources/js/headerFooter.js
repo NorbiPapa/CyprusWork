@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <p class="ms-4">Bright Change</p>
         <div class="d-flex align-items-center justify-content-end">
             <a class="active" href="/">Home</a>
-            <a href="/erasmusCourses">Erasmus+ VET courses</a>
+            <a href="/erasmus-courses">Erasmus+ VET courses</a>
             <a href="/gallery">Gallery</a>
-            <a href="/aboutUs">About Us</a>
+            <a href="/about-us">About Us</a>
             <a href="#reviews">Reviews</a>
         </div>
     </div>

@@ -15,7 +15,6 @@
     <div id="betustilusok">
 
     </div>
-
     @vite(['resources/css/app.css', 'resources/js/headerFooter.js', 'resources/js/design.js', 'resources/js/javagallery.js'])
 </head>
 <body>
