@@ -18,15 +18,9 @@
         <!-- Styles -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         
-        <!--SAJTÁT IMPORT-->
-        <script src="../backend/headerFooter.js"></script>
-        <link rel="stylesheet" href="../backend/Design.css">
-        <script type="module" src="../backend/design.js"></script>
-        <!--BETŰSTÍLUSOK-->
-        
         <title>Cyprus design example</title>
 
-        @vite(['resources/css/app.css', 'resources/js/headerFooter.js', 'resources/js/design.js',])
+        @vite(['resources/css/app.css', 'resources/js/headerFooter.js', 'resources/js/design.js'])
 
     </head>
     <body class="antialiased">
