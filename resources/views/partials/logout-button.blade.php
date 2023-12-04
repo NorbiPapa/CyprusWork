@@ -1,3 +1,10 @@
 @if(Auth::check())
-    <div><button type="button" class="btn btn-danger ms-4">Logout</button></div>
+    <div>
+        <form method="POST" action="{{ route('logout') }}">
+        @csrf
+            <button type="submit" class="btn btn-danger ms-4">
+                {{ __('Log Out') }}
+            </button>
+        </form>
+    </div>
 @endif

@@ -1,6 +1,8 @@
 function loadLogoutButton() {
     fetch('/logout-button')
-        .then(response => response.text())
+        .then(response => {
+            return response.text();
+        })
         .then(html => {
             document.getElementById('logout-button-placeholder').innerHTML = html;
         })
@@ -47,4 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("header").innerHTML = headerInnerHtml;
     document.getElementById("footer").innerHTML = footerInnerHtml;
     document.getElementById("betustilusok").innerHTML = betustilusLinkek;
+
+    loadLogoutButton();
 });
