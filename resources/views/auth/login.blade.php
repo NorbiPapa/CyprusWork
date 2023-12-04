@@ -1,47 +1,41 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+<!DOCTYPE html>
+<html lang="en">
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <title>Cyprus design example</title>
 
-        <!-- Username -->
-        <div>
-            <x-input-label for="username" :value="__('Username')" />
-            <x-text-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('username')" class="mt-2" />
-        </div>
+  @vite(['resources/css/login.css'])
+</head>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
+<body>
+  
+  <a href="#home"> <img src="pictures/Kleoslogo.png" alt="Home" class="center"></a>
+  <div class="row">
+    <div class="login">
+      <div class="heading">
+        <h2 id="signin">Sign in</h2>
+        <form action="{{ route('login') }}" method="post">
+            @csrf
 
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
+          <div class="input-group-lg">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" name="username" placeholder="Username" id="username">
+          </div>
 
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+          <div class="input-group-lg">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <input type="password" class="form-control" name="password" placeholder="Password" id="password">
+          </div>
 
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
-                <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-            </label>
-        </div>
+          <input type="submit" value="Login" id="loginButton" class="float" />
+        </form>
+      </div>
+    </div>
+  </div>
 
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
+</body>
 
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+</html>

@@ -40,4 +40,8 @@ Route::get('/about-us', function() {
     return view('aboutUs'); // assuming the Blade file is named aboutUs.blade.php
 });
 
+Route::get('/logout-button', function () {
+    return view('partials.logout-button');
+});
+
 require __DIR__.'/auth.php';

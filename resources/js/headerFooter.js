@@ -1,10 +1,22 @@
+function loadLogoutButton() {
+    fetch('/logout-button')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('logout-button-placeholder').innerHTML = html;
+        })
+        .catch(error => console.error('Error loading logout button:', error));
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     
     let headerInnerHtml = `
-    <div id="topnav">
-        <img src="pictures/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" style="height: 75px;" width="75px"
-            id="logo" alt="Kleos farm logo">
-        <p class="ms-4">Bright Change</p>
+    <div id="topnav" class="d-flex align-items-center justify-content-between">
+        <div>
+            <img src="pictures/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" style="height: 75px;" width="75px"
+                id="logo" alt="Kleos farm logo">
+            <p class="ms-4">Bright Change</p>
+        </div>
+        <div id="logout-button-placeholder"></div> <!-- Placeholder for logout button -->
         <div class="d-flex align-items-center justify-content-end">
             <a class="active" href="/">Home</a>
             <a href="/erasmus-courses">Erasmus+ VET courses</a>
