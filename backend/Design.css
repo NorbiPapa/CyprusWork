@@ -255,8 +255,8 @@ body {
   min-width: 50%; /* Képek szélessége 50% a szülőhöz képest */
 }
 .slideshow-container img {
-  width: 100%; /* Teljes szélességű képek */
-  height: auto;
+  width: auto; /* Teljes szélességű képek */
+  height: 90vh;
 }
 /* Next & previous buttons */
 .prev,
