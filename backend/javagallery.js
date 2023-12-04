@@ -1,66 +1,56 @@
-var slideIndex = 0;
-var slides, dots;
-var slideTimeout;
+let slideIndex = 0;
+let timeoutId = null;
+const slides = document.querySelector(".slides");
+const dots = document.getElementsByClassName("dot");
 
-function showSlides() {
-  var i;
-  slides = document.getElementsByClassName("mySlides");
-  dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  slideTimeout = setTimeout(showSlides, 8000); // Change image every 8 seconds
-}
 
-function plusSlides(position) {
-  clearTimeout(slideTimeout); // Stop the automatic slideshow
-  slideIndex += position;
-  if (slideIndex > slides.length) {
-    slideIndex = 1
-  } else if (slideIndex < 1) {
-    slideIndex = slides.length
-  }
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (var i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  slideTimeout = setTimeout(showSlides, 4000); // Restart the automatic slideshow
-}
+
 
 function currentSlide(index) {
-  clearTimeout(slideTimeout); // Stop the automatic slideshow
-  if (index > slides.length) {
-    index = 1
-  } else if (index < 1) {
-    index = slides.length
-  }
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (var i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[index - 1].style.display = "block";
-  dots[index - 1].className += " active";
-  slideTimeout = setTimeout(showSlides, 8000); // Restart the automatic slideshow
-}
-
-
-function init() {
+  console.log("asdasdasd");
+  slideIndex = index;
   showSlides();
 }
 
-document.addEventListener('DOMContentLoaded', init)
+function plusSlides(step) {
+  slideIndex += step;
+  showSlides();
+}
+
+
+function showSlides() {
+var slidelist = document.querySelectorAll(".slide");
+console.log(slidelist);
+  
+  if (slideIndex >= slidelist.length) {
+    slideIndex = 0;
+  } else if (slideIndex < 0) {
+    slideIndex = slidelist.length - 1;
+  }
+  const translateValue = -slideIndex * 50 + "%";
+  console.log("0")
+
+  for (let i=0; i < slidelist.length; i++) {
+    console.log("1")
+    
+    slidelist[i].style.transform = "translateX(" + translateValue + ")";
+  }
+  
+  console.log("1,5")
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove('active');
+    console.log("2")
+  }
+  dots[slideIndex].classList.add('active');
+  console.log("3")
+  if (timeoutId) {
+    clearTimeout(timeoutId);
+    console.log("4")
+  }
+  timeoutId = setTimeout(function() {
+    plusSlides(1);
+    console.log("5")
+  }, 5000); // Change image every 5 seconds
+}
+
+document.addEventListener("DOMContentLoaded",showSlides());
