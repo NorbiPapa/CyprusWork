@@ -17,18 +17,28 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
 
     let footerInnerHtml = `
-        <p id="contactus">Contact Us</p>
-        <p id="info">For more information about Kleos <br>
-            Please contact us at <a id="contactEmail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@shipcon.eu.com" target="_blank">info@shipcon.eu.com</a></p>
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe width="613" height="251" id="gmap_canvas" src="https://maps.google.com/maps?q=shipcon+hq&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+    <div class="row w-100">
+        <div class="col-4">
+            <p id="contactus">Contact Us</p>
+            <p id="info">For more information about Kleos <br>
+                Please contact us at <a id="contactEmail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@shipcon.eu.com" target="_blank">info@shipcon.eu.com</a></p>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center p-0">
+            <div class="mapouter" style="position:relative; width:100%; height:0; padding-bottom:33.25%;">
+                <div class="gmap_canvas" style="position:absolute; top:0; left:0; width:100%; height:100%;">
+                    <iframe style="width: 100%; height: 100%; position: absolute;" src="https://maps.google.com/maps?q=shipcon+hq&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                </div>
             </div>
         </div>
-        <a href="https://www.facebook.com/profile.php?id=100091936171751" target="_blank"><img
-                src="../images/facebook-icon-512x512-seb542ju.png" alt="Facebook Icon" class="sicon me-5"></a>
-        <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram_icon.png" alt="Instagram icon"
-                class="sicon"></a>
+        <div class="col-2 d-flex justify-content-end align-items-end">
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100091936171751" target="_blank"><img
+                        src="../images/facebook-icon-512x512-seb542ju.png" alt="Facebook Icon" class="sicon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram_icon.png" alt="Instagram icon"
+                        class="sicon"></a>
+            </div>
+        </div>
+    </div>
     `;
 
     let betustilusLinkek = `
