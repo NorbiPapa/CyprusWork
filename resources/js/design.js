@@ -1,7 +1,6 @@
-function HeaderEffect()
-{
+function HeaderEffect() {
   var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
+  window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("topnav").style.top = "0";
@@ -12,9 +11,6 @@ function HeaderEffect()
   }
 }
 
-function init()
-{
-HeaderEffect();
-}
-
-document.addEventListener('DOMContentLoaded', init)
+document.addEventListener('DOMContentLoaded', () => {
+  HeaderEffect();
+});

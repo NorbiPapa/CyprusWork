@@ -1,346 +1,281 @@
 /*-----UNIVERZÁLIS-----*/
 
 body {
-    background-color: #223832;
-    color: white;
-  }
+  background-color: #223832;
+  color: white;
+}
+
+h5 {
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', serif;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+hr {
+  width: 96%;
+}
+
+/*-----HEADER-----*/
+
+header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  height: 110px;
+}
+
+#topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C4D4E9;  
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: inherit;
+  transition: top 0.5s;
+  box-shadow: 0px -20px 5px 20px #333333;
+}
+
+#topnav p {
+  float: left;
+  color: #294A70;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+#topnav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#topnav ul li a {
+  float: right;
+  color: #294A70;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: large;
+  transition: transform .2s, padding .2s;
+  transform-origin: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#topnav a:hover,
+#topnav ul li.active a {
+  transform: scale(1.3);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#topnav a::after {
+  content: '';
+  height: 3px;
+  width: 50%;
+  background: #294A70;
+  position: absolute;
+  left: 25%;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+#topnav a:hover::after,
+#topnav ul li.active a::after {
+  opacity: 1;
+}
+
+#logo {
+  float: left;
+  margin-left: 100px;
+  height: 75px; 
+  width: 75px;
   
-  h5 {
-    padding-bottom: 30px;
-  }
-  
-  ul {
-    list-style-type: circle;
-  }
-  
-  h2 {
-    font-family: 'Fredericka the Great', serif;
-  }
-  
-  p {
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  hr {
-    width: 96%;
-  }
-  
-  .container{
-    padding-top: 80px;
-  }
-  
-  /*-----HEADER-----*/
-  
-  header {
-    width: 100%;
-    position: relative;
-    z-index: 10;
-  }
-  
-  #topnav {
-    background-color: #C4D4E9;  
-    overflow: hidden;
-    line-height: 90px;
-    position: fixed;
-    top: 0;
-    width:100%;
-    transition: top 0.5s;
-    margin-bottom: 20px;
-  }
-  
-  #topnav p {
-    float: left;
-    color: #294A70;
-    font-size: xx-large;
-  }
-  
-  #topnav a {
-    float: right;
-    color: #294A70;
-    padding-left: 14px;
-    padding-right: 14px;
-    text-decoration: none;
-    font-size: large;
-    transition: transform .2s, padding .2s;
-    transform-origin: center;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  #topnav a:hover {
-    transform: scale(1.5);
-    padding-left: 40px;
-    padding-right: 40px;
-    vertical-align: middle;
-  }
-  
-  #logo {
-    float: left;
-    margin-top: 10px;
-    margin-left: 100px;
-  }
-  
-  p.ms-4 {
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  /*-----FOOTER-----*/
-  
-  footer {
-    background-color: #F9C784;
-    height: 250px;
-    display: block;
-  }
-  
-  #info {
-    float: left;
-    margin-top: 50px;
-    margin-left: 100px;
-  }
-  
-  #contactus {
-    font-size: 40px;
-    margin-left: 100px;
-    padding-top: 50px;
-  }
-  
-  .sicon {
-    width: 50px;
-    height: 50px;
-    float: right;
-    margin-left: 10px;
-  }
-  
-  /*-----ATTENTION GETTER-----*/
-  
-  #attentionPlace {
-    height: 100%;
-    width: 100vw;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../../pictures/attentionBackground.JPG");
-    background-position: right;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  #aboutUsButton {
-    width: 200px;
-    margin-left: 50px;
-    padding: 10px;
-    background-color: #CEB5A7;
-    border-radius: 10px;
-    border: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-  }
-  
-  /*-----ERASMUS COURSES-----*/
-  
-  #erasmusCourses{
-    text-align: right;
-    width: 100%;
-  }
-  
-  #circle {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; 
-  }
-  
-  #circle li {
-    list-style-type: none;
-    border-radius: 10px; 
-    overflow: hidden; 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; 
-  }
-  
-  #circle img {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
-    margin-left: 10px;
-  }
-  
-  #circle p {
-    margin: 0; 
-    text-align: right;
-    font-size: x-large;
-  }
-  
-  #circle ul {
-    list-style-type: none;
-  }
-  
-  #erasmusli1 img {
-    background-color: #4682B4; 
-  }
-  
-  #erasmusli2 img {
-    background-color: #7FBBB0;
-  }
-  
-  #erasmusli3 img {
-    background-color: #E07A5F; 
-  }
-  
-  #erasmus {
-    background-color: #C4D4E9; 
-    color: black;
-  }
-  
-  /*----- FAQ -----*/
-  
-  #questionsList li{
-    font-size: x-large;
-    cursor: pointer;
-    color: white;
-  }
-  
-  #li1 {
-    background-color: #294A70;
-  }
-  
-  #answer {
-    background-color: #294A70;
-  }
-  
-  #questionsList {
-    list-style-type: none;
-  }
-  
-  /*----- ABOUT US -----*/
-  
-  #about {
-    margin-bottom: 100px;
-    margin-top: 100px;
-  }
-  
-  #abouttext{
-    margin: 60px;
-  }
-  
-  /*----- HOME KLEOS WITH IMAGE -----*/
-  
-  #home {
-    align-self: center;
-  }
-  
-  #kleosFelirat {
-    font-family: 'Fredericka the Great', serif;
-    font-size: 80px;
-  }
-  
-  /*----- GALLERY-----*/
-  
-  * {
-    box-sizing: border-box
-  }
-  
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 90%;
-    position: relative;
-    margin: 30px auto auto auto;
-  }
-  
-  .slideshow-container img {
-    display: block;
-    margin: 0 auto;
-    left: 0;
-    width: auto;
-    height: 90vh;
-    z-index: 1;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: block;
-  }
-  
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .dot:hover {
-    background-color: #717171;
-  }
-  
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 10s;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 1
-    }
-  
-    to {
-      opacity: 1
-    }
-  }
-  
-  /*-----FACEBOOK-----*/
-  
-  #facebookBox {
-    margin: 90px 0px 90px 200px;
-  }
+}
+
+/*-----FOOTER-----*/
+
+footer {
+  background-color: #F9C784;
+  height: 250px;
+  color: #223832;
+}
+
+#info {
+  float: left;
+  margin-left: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contactus {
+  font-size: 40px;
+  margin-left: 100px;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contactEmail {
+  color: rgb(255, 106, 6);
+  text-decoration: none;
+}
+
+#contactEmail:hover {
+  text-decoration: rgb(255, 106, 6) dotted underline 2px;
+}
+
+.sicon {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-left: 10px;
+}
+
+/*-----ATTENTION GETTER-----*/
+
+#attentionPlace {
+  height: 100%;
+  width: 99.8vw;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../../public/pictures/attentionBackground.JPG");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#aboutUsButton {
+  width: 200px;
+  padding: 10px;
+  background-color: #CEB5A7;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: large;
+}
+
+#facebookBox {
+  margin: 90px 0px 90px 100px;
+}
+
+/*----- ABOUT US -----*/
+
+#about {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+#abouttext{
+  margin: 60px;
+}
+
+/*----- HOME KLEOS WITH IMAGE -----*/
+
+#home {
+  align-self: center;
+}
+
+#kleosFelirat {
+  font-family: 'Fredericka the Great', serif;
+  font-size: 80px;
+}
+
+/*----- GALLERY-----*/
+
+* {
+  box-sizing: border-box;
+}
+
+#dotsDiv {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.slides {
+  display: flex; /* Képek egymás mellé kerülnek */
+  width: 200%; /* Képek szélessége (minden kép 50%-ot fog elfoglalni) */
+  transition: transform 0.6s ease;
+}
+.slide {
+  min-width: 50%; /* Képek szélessége 50% a szülőhöz képest */
+}
+.slideshow-container img {
+  margin: 50px auto auto auto;
+  display: block;
+  width: auto; /* Teljes szélességű képek */
+  height: 75vh;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active-dot,
+.dot:hover {
+  background-color: #111111;
+}

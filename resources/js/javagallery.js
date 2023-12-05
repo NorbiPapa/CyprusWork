@@ -61,6 +61,12 @@ function currentSlide(index) {
 
 function init() {
   showSlides();
+  document.getElementById("prev").addEventListener('click', () => {
+    plusSlides(-1)
+  });
+  document.getElementById("next").addEventListener('click', () => {
+    plusSlides(1)
+  });
 }
 
 document.addEventListener('DOMContentLoaded', init)
