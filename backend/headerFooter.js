@@ -1,29 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     let headerInnerHtml = `
     <div id="topnav">
-        <img src="../images/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" style="height: 75px;" width="75px"
-            id="logo" alt="Kleos farm logo">
-        <p class="ms-4">Bright Change</p>
-        <div class="d-flex align-items-center justify-content-end">
-            <a class="active" href="DesignExample.html">Home</a>
-            <a href="erasmusCourses.html">Erasmus+ VET courses</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="aboutUs.html">About Us</a>
-            <a href="#reviews">Reviews</a>
+        <div>
+            <img src="../images/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" id="logo" alt="Kleos farm logo">
+            <p>Educational Model Farm</p>
         </div>
+
+        <ul>
+            <li class="nav-link active"><a href="DesignExample.html">Home</a></li>
+            <li class="nav-link"><a href="gallery.html">Gallery</a></li>
+            <li class="nav-link"><a href="aboutUs.html">About Us</a></li>
+            <li class="nav-link"><a href="reviews.html">Reviews</a></li>
+        </ul>
     </div>
     `;
 
     let footerInnerHtml = `
         <p id="contactus">Contact Us</p>
         <p id="info">For more information about Kleos <br>
-            Please contact us at <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@shipcon.eu.com" target="_blank">info@shipcon.eu.com</a></p>
+            Please contact us at <a id="contactEmail" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=info@shipcon.eu.com" target="_blank">info@shipcon.eu.com</a></p>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="613" height="251" id="gmap_canvas" src="https://maps.google.com/maps?q=shipcon+hq&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+            </div>
+        </div>
         <a href="https://www.facebook.com/profile.php?id=100091936171751" target="_blank"><img
                 src="../images/facebook-icon-512x512-seb542ju.png" alt="Facebook Icon" class="sicon me-5"></a>
         <a href="https://www.instagram.com/" target="_blank"><img src="../images/Instagram_icon.png" alt="Instagram icon"
                 class="sicon"></a>
-        <a href="https://twitter.com/XSocialNetworks" target="_blank"><img src="../images/x.png" alt="X icon" class="sicon"></a>
     `;
 
     let betustilusLinkek = `
@@ -35,4 +40,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("header").innerHTML = headerInnerHtml;
     document.getElementById("footer").innerHTML = footerInnerHtml;
     document.getElementById("betustilusok").innerHTML = betustilusLinkek;
+
 });
