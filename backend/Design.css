@@ -255,8 +255,10 @@ body {
   min-width: 50%; /* Képek szélessége 50% a szülőhöz képest */
 }
 .slideshow-container img {
+  margin: 50px auto auto auto;
+  display: block;
   width: auto; /* Teljes szélességű képek */
-  height: 90vh;
+  height: 75vh;
 }
 /* Next & previous buttons */
 .prev,
@@ -317,18 +319,6 @@ body {
 .dot:hover {
   background-color: #111111;
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
-  }
-}
-
-
-
-
 
 
 /*-----FACEBOOK-----*/
