@@ -115,7 +115,6 @@ header {
 footer {
   background-color: #F9C784;
   height: 250px;
-  display: block;
   color: #223832;
 }
 
@@ -146,10 +145,6 @@ footer {
   height: 50px;
   float: right;
   margin-left: 10px;
-}
-
-.mapouter {
-  float: top;
 }
 
 /*-----ATTENTION GETTER-----*/
