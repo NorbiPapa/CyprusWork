@@ -25,10 +25,6 @@ hr {
   width: 96%;
 }
 
-.container{
-  padding-top: 80px;
-}
-
 /*-----HEADER-----*/
 
 header {
@@ -120,18 +116,29 @@ footer {
   background-color: #F9C784;
   height: 250px;
   display: block;
+  color: #223832;
 }
 
 #info {
   float: left;
-  margin-top: 50px;
   margin-left: 100px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #contactus {
   font-size: 40px;
   margin-left: 100px;
   padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contactEmail {
+  color: rgb(255, 106, 6);
+  text-decoration: none;
+}
+
+#contactEmail:hover {
+  text-decoration: rgb(255, 106, 6) dotted underline 2px;
 }
 
 .sicon {
@@ -141,11 +148,15 @@ footer {
   margin-left: 10px;
 }
 
+.mapouter {
+  float: top;
+}
+
 /*-----ATTENTION GETTER-----*/
 
 #attentionPlace {
   height: 100%;
-  width: 100vw;
+  width: 99.8vw;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../images/attentionBackground.JPG");
   background-position: right;
@@ -155,13 +166,17 @@ footer {
 
 #aboutUsButton {
   width: 200px;
-  margin-left: 50px;
   padding: 10px;
   background-color: #CEB5A7;
   border-radius: 10px;
   border: none;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
+  font-size: large;
+}
+
+#facebookBox {
+  margin: 90px 0px 90px 100px;
 }
 
 /*----- ABOUT US -----*/
@@ -191,10 +206,12 @@ footer {
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
+
+#dotsDiv {
+  text-align: center;
+  margin-bottom: 100px;
 }
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -266,11 +283,4 @@ body {
 .active-dot,
 .dot:hover {
   background-color: #111111;
-}
-
-
-/*-----FACEBOOK-----*/
-
-#facebookBox {
-  margin: 90px 0px 90px 200px;
 }
