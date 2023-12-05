@@ -27,55 +27,55 @@
       <!-- Full-width images with number and caption text -->
       <div class="slides">
         <div class="slide">
-          <img src="/Kleos_images/farm_dogs.png">
+          <img src="../Kleos_images/farm_dogs.png">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/farm_horse.png">
+          <img src="../Kleos_images/farm_horse.png">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/goats.png">
+          <img src="../Kleos_images/goats.png">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0215.jpeg">
+          <img src="../Kleos_images/IMG_0215.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0217.jpeg">
+          <img src="../Kleos_images/IMG_0217.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0221.jpeg">
+          <img src="../Kleos_images/IMG_0221.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0227.jpeg">
+          <img src="../Kleos_images/IMG_0227.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0230.jpeg">
+          <img src="../Kleos_images/IMG_0230.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0232.jpeg">
+          <img src="../Kleos_images/IMG_0232.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0241.jpeg">
+          <img src="../Kleos_images/IMG_0241.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0242.jpeg">
+          <img src="../Kleos_images/IMG_0242.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0247.jpeg">
+          <img src="../Kleos_images/IMG_0247.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0306.jpeg">
+          <img src="../Kleos_images/IMG_0306.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0312.jpeg">
+          <img src="../Kleos_images/IMG_0312.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0320.jpeg">
+          <img src="../Kleos_images/IMG_0320.jpeg">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0329.png">
+          <img src="../Kleos_images/IMG_0329.png">
         </div>
         <div class="slide">
-          <img src="/Kleos_images/IMG_0330.png">
+          <img src="../Kleos_images/IMG_0330.png">
         </div>
 
         <!-- további diák... -->
@@ -137,9 +137,9 @@
       slides.style.transform = "translateX(" + translateValue + ")";
 
       for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('active');
+        dots[i].classList.remove('active-dot');
       }
-      dots[slideIndex].classList.add('active');
+      dots[slideIndex].classList.add('active-dot');
 
       if (timeoutId) {
         clearTimeout(timeoutId);
