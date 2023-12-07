@@ -13,16 +13,12 @@ ul {
   list-style-type: circle;
 }
 
-h2 {
-  font-family: 'Fredericka the Great', serif;
-}
-
-p {
-  font-family: 'Courier New', Courier, monospace;
-}
-
 hr {
   width: 96%;
+}
+
+.row {
+  margin: 0px;
 }
 
 /*-----HEADER-----*/
@@ -31,7 +27,7 @@ header {
   width: 100%;
   position: relative;
   z-index: 10;
-  height: 110px;
+  height: 125px;
 }
 
 #topnav {
@@ -64,7 +60,7 @@ header {
   align-items: center;
 }
 
-#topnav ul li a {
+#topnav a {
   float: right;
   color: #294A70;
   padding-left: 14px;
@@ -119,16 +115,17 @@ footer {
 }
 
 #info {
-  float: left;
-  margin-left: 100px;
   font-family: 'Montserrat', sans-serif;
 }
 
 #contactus {
   font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contactUsDiv {
   margin-left: 100px;
   padding-top: 50px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 #contactEmail {
@@ -141,17 +138,15 @@ footer {
 }
 
 .sicon {
-  width: 50px;
-  height: 50px;
-  float: right;
-  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
 }
 
 /*-----ATTENTION GETTER-----*/
 
 #attentionPlace {
   height: 100%;
-  width: 99.8vw;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../images/attentionBackground.JPG");
   background-position: right;
@@ -178,11 +173,21 @@ footer {
 
 #about {
   margin-bottom: 100px;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
-#abouttext{
+#abouttext {
   margin: 60px;
+}
+
+#abouttext h2{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutUsImage {
+  width: auto;
+  height: auto;
+  max-height: 250px;
 }
 
 /*----- HOME KLEOS WITH IMAGE -----*/
@@ -194,6 +199,14 @@ footer {
 #kleosFelirat {
   font-family: 'Fredericka the Great', serif;
   font-size: 80px;
+}
+
+#mainH2 {
+  font-family: 'Fredericka the Great', serif;
+}
+
+#mainP {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /*----- GALLERY-----*/

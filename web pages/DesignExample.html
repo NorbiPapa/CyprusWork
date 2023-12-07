@@ -2,60 +2,68 @@
 <html lang="en">
 
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
+    <!-- Sets the viewport to ensure the site is responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Imports Bootstrap CSS for styling -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <!--SAJTÁT IMPORT-->
+    <!-- Custom script import for header and footer functionality -->
     <script src="../backend/headerFooter.js"></script>
+    <!-- Custom CSS import for additional styling -->
     <link rel="stylesheet" href="../backend/Design.css">
+    <!-- Custom JavaScript module import for header design functionality -->
     <script type="module" src="../backend/design.js"></script>
-    <!--BETŰSTÍLUSOK-->
-    <div id="betustilusok">
-
-    </div>
+    <!-- Container for custom font styles (content gets autofilled by headerFooter.js) -->
+    <div id="betustilusok"></div>
+    <!-- Sets the title of the web page -->
     <title>Cyprus design example</title>
+    <!-- Facebook SDK script for Facebook integration -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="HHAb3jrP"></script>
 </head>
 
 <body>
 
-    <header id="header">
+    <!-- Header section placeholder for headerFooter.js -->
+    <header id="header"></header>
 
-    </header>
-
+    <!-- Main content container -->
     <div id="container">
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="HHAb3jrP"></script>
-
+        <!-- Bootstrap container for responsive layout -->
         <div class="container">
+            <!-- Bootstrap row for layout -->
             <div class="row">
+                <!-- Column for title and introduction text -->
                 <div id="home" class="col-4 col-md-6">
                     <h1 id="kleosFelirat">KLEOS</h1>
-                    <h2>Educational <br> Model Farm</h2>
+                    <h2 id="mainH2">Educational <br> Model Farm</h2>
                     <hr>
-                    <p>Welcome to Kleos! Welcome to the school of the future! </p>
+                    <p id="mainP">Welcome to Kleos! Welcome to the school of the future! </p>
                 </div>
+                <!-- Column for image -->
                 <div class="col-8 col-md-6">
-                    <img style="width: 103%; height: 102.6%;" src="../images/Kleo.jpg" alt="Kleos Educational Model FarmS">
+                    <img style="width: 103%; height: 102.6%;" src="../images/Kleo.jpg" alt="Kleos Educational Model Farm">
                 </div>
             </div>
         </div>
+        <!-- Another row for Facebook integration and additional information -->
         <div class="row mt-3 mb-0" id="attentionPlace">
+            <!-- Column for Facebook page widget -->
             <div class="col-7 d-flex justify-content-center">
                 <div id="facebookBox" class="fb-page" data-href="https://www.facebook.com/profile.php?id=100091936171751" data-width="500"
                     data-height="600" show-posts="true"></div>
             </div>
+            <!-- Column for additional attention getter text and 'About Us' button -->
             <div class="col-3 align-items-center text-center">
                 <h4 class="mb-5">Kleos Educational Model Farm is the latest innovative initiative of ShipCon, a
-                    self-sustainable
-                    educational farm - agricultural & animal - at the outskirts of Limassol, in the well-known area of
-                    Parekklisia.</h4>
+                    self-sustainable educational farm - agricultural & animal - at the outskirts of Limassol, in the well-known area of Parekklisia.</h4>
                 <button id="aboutUsButton">About Us</button>
             </div>
         </div>
     </div>
 
-    <footer id="footer">
-
-    </footer>
+    <!-- Footer section placeholder for headerFooter.js -->
+    <footer id="footer"></footer>
 
 </body>
 

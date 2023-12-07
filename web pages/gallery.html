@@ -2,30 +2,34 @@
 <html>
 
 <head>
+  <!-- Specifies the character encoding for the HTML document -->
   <meta charset='utf-8'>
+  <!-- Ensures compatibility with Internet Explorer -->
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <!-- Sets the title of the web page -->
   <title>Gallery</title>
+  <!-- Sets the viewport for responsive web design -->
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- Imports Bootstrap CSS for styling -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <!--SAJTÁT IMPORT-->
+  <!-- Custom script for header and footer functionality -->
   <script src="../backend/headerFooter.js"></script>
+  <!-- Custom CSS for additional styling -->
   <link rel="stylesheet" href="../backend/Design.css">
-  <!--BETŰSTÍLUSOK-->
-  <div id="betustilusok">
-
-  </div>
+  <!-- Container for custom font styles (content gets autofilled by headerFooter.js) -->
+  <div id="betustilusok"></div>
 </head>
 
 <body>
-  <header id="header">
-
-  </header>
+  <!-- Header section placeholder -->
+  <header id="header"></header>
 
   <div class="container">
-    <!-- Slideshow container -->
+    <!-- Slideshow container for the gallery images -->
     <div class="slideshow-container">
       <!-- Full-width images with number and caption text -->
       <div class="slides">
+        <!-- Individual slide elements with images -->
         <div class="slide">
           <img src="../Kleos_images/farm_dogs.png">
         </div>
@@ -77,16 +81,15 @@
         <div class="slide">
           <img src="../Kleos_images/IMG_0330.png">
         </div>
-
-        <!-- további diák... -->
       </div>
-      <!-- Next and previous buttons -->
+      <!-- Next and previous buttons for the slideshow -->
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-    <!-- The dots/circles -->
+    <!-- The dots/circles for slide navigation -->
     <div id="dotsDiv">
+      <!-- Individual dots for each slide -->
       <span class="dot" onclick="currentSlide(0)"></span>
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
@@ -107,7 +110,7 @@
     </div>
   </div>
 
-
+  <!-- JavaScript for slideshow functionality -->
   <script>
     let slideIndex = 0;
     let timeoutId = null;
@@ -117,16 +120,19 @@
     showSlides();
 
     function currentSlide(index) {
+      // Function to display the current slide
       slideIndex = index;
       showSlides();
     }
 
     function plusSlides(step) {
+      // Function to change the slide by a certain number of steps
       slideIndex += step;
       showSlides();
     }
 
     function showSlides() {
+      // Function to show the slides and handle wrapping around
       if (slideIndex >= slides.children.length) {
         slideIndex = 0;
       } else if (slideIndex < 0) {
@@ -150,9 +156,8 @@
     }
   </script>
 
-  <footer id="footer">
-
-  </footer>
+  <!-- Footer section placeholder -->
+  <footer id="footer"></footer>
 </body>
 
 </html>
