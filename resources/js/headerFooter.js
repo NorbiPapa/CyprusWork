@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li class="nav-link active" id="home"><a href="/">Home</a></li>
                 <li class="nav-link" id="gallery"><a href="/gallery">Gallery</a></li>
                 <li class="nav-link" id="aboutus"><a href="/about-us">About Us</a></li>
-                <li class="nav-link" id="reviews"><a href="reviews.html">Reviews</a></li>
+                <li class="nav-link" id="reviews"><a href="/reviews">Reviews</a></li>
             </ul>
         </div>
     </div>
