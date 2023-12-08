@@ -44,4 +44,8 @@ Route::get('/logout-button', function () {
     return view('partials.logout-button');
 });
 
+Route::get('/reviews', function () {
+    return view('reviews');
+});
+
 require __DIR__.'/auth.php';
