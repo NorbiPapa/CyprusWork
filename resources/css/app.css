@@ -1,0 +1,313 @@
+/*-----UNIVERZÁLIS-----*/
+
+body {
+  background-color: #223832;
+  color: white;
+}
+
+h5 {
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+hr {
+  width: 96%;
+}
+
+.row {
+  margin: 0px;
+}
+
+/*-----HEADER-----*/
+
+header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  height: 125px;
+}
+
+#topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #C4D4E9;  
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: inherit;
+  transition: top 0.5s;
+  box-shadow: 0px -20px 5px 20px #333333;
+}
+
+#topnav p {
+  float: left;
+  color: #294A70;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+#topnav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navlinks a {
+  float: right;
+  color: #294A70;
+  padding-left: 14px;
+  padding-right: 14px;
+  text-decoration: none;
+  font-size: large;
+  transition: transform .2s, padding .2s;
+  transform-origin: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#topnav a:hover,
+#topnav ul li.active {
+  transform: scale(1.3);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#topnav a::after {
+  content: '';
+  height: 3px;
+  width: 50%;
+  background: #294A70;
+  position: absolute;
+  left: 25%;
+  bottom: -8px;
+  opacity: 0;
+  transition: all 0.2s;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+#topnav a:hover::after,
+#topnav ul li.active a::after {
+  opacity: 1;
+}
+
+#logo {
+  float: left;
+  margin-left: 100px;
+  height: 75px; 
+  width: 75px;
+  cursor: pointer;
+}
+
+/*-----FOOTER-----*/
+
+footer {
+  background-color: #F9C784;
+  height: 250px;
+  color: #223832;
+}
+
+#info {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contactus {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contactUsDiv {
+  margin-left: 100px;
+  padding-top: 50px;
+}
+
+#contactEmail {
+  color: rgb(255, 106, 6);
+  text-decoration: none;
+}
+
+#contactEmail:hover {
+  text-decoration: rgb(255, 106, 6) dotted underline 2px;
+}
+
+.sicon {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+}
+
+/*-----ATTENTION GETTER-----*/
+
+#attentionPlace {
+  height: 100%;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("../../public/pictures/attentionBackground.JPG");
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#aboutUsButton {
+  width: 200px;
+  padding: 10px;
+  background-color: #CEB5A7;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: large;
+}
+
+#facebookBox {
+  margin: 90px 0px 90px 100px;
+}
+
+/*----- ABOUT US -----*/
+
+#about {
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+
+#abouttext {
+  margin: 60px;
+  text-align: justify;
+}
+
+#abouttext h2{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutUsImage {
+  width: auto;
+  height: auto;
+  max-height: 250px;
+}
+
+/*----- HOME KLEOS WITH IMAGE -----*/
+
+#home {
+  align-self: center;
+}
+
+#kleosFelirat {
+  font-family: 'Fredericka the Great', serif;
+  font-size: 80px;
+}
+
+#mainH2 {
+  font-family: 'Fredericka the Great', serif;
+}
+
+#mainP {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/*----- GALLERY-----*/
+
+* {
+  box-sizing: border-box;
+}
+
+#dotsDiv {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.slideshow-container {
+  height: 500px;
+  width: 600px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex; /* Képek egymás mellé kerülnek */
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  flex: 0 0 100%; /* Each slide takes full width of the container */
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  visibility: none;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.slide.active {
+  opacity: 1;
+  visibility: block;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #999999;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active-dot,
+.dot:hover {
+  background-color: #111111;
+}
+
+#headertext:hover{
+  cursor: pointer;
+}
