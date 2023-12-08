@@ -60,7 +60,7 @@ header {
   align-items: center;
 }
 
-#topnav a {
+#navlinks a {
   float: right;
   color: #294A70;
   padding-left: 14px;
@@ -73,7 +73,7 @@ header {
 }
 
 #topnav a:hover,
-#topnav ul li.active a {
+#topnav ul li.active {
   transform: scale(1.3);
   padding-left: 20px;
   padding-right: 20px;
@@ -103,7 +103,7 @@ header {
   margin-left: 100px;
   height: 75px; 
   width: 75px;
-  
+  cursor: pointer;
 }
 
 /*-----FOOTER-----*/
@@ -306,4 +306,8 @@ footer {
 .active-dot,
 .dot:hover {
   background-color: #111111;
+}
+
+#headertext:hover{
+  cursor: pointer;
 }

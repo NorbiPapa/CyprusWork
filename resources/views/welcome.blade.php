@@ -58,7 +58,7 @@
         <div class="col-3 align-items-center text-center">
             <h4 class="mb-5">Kleos Educational Model Farm is the latest innovative initiative of ShipCon, a
                 self-sustainable educational farm - agricultural & animal - at the outskirts of Limassol, in the well-known area of Parekklisia.</h4>
-            <button id="aboutUsButton">About Us</button>
+            <a href="/about-us"><button id="aboutUsButton">About Us</button></a>
         </div>
     </div>
 </div>

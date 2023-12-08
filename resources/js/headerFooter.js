@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let headerInnerHtml = `
     <div id="topnav" class="d-flex align-items-center justify-content-between">
         <div>
-            <img src="pictures/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" style="height: 75px;" width="75px"
-                id="logo" alt="Kleos farm logo">
-            <p class="ms-4">Educational Model Farm</p>
+            <a href="/"><img src="pictures/Kleos Logo_quality-PhotoRoom.png-PhotoRoom.png" style="height: 75px;" width="75px"
+                id="logo" alt="Kleos farm logo"></a>
+            <a href="/"><p class="ms-4" id="headertext">Educational Model Farm</p></a>
         </div>
         <div id="logout-button-placeholder"></div> <!-- Placeholder for logout button -->
-        <div class="d-flex align-items-center justify-content-end">
+        <div class="d-flex align-items-center justify-content-end" id="navlinks">
             <ul>
                 <li class="nav-link active" id="home"><a href="/">Home</a></li>
                 <li class="nav-link" id="gallery"><a href="/gallery">Gallery</a></li>
